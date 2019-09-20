@@ -1,0 +1,25 @@
+.right-text {
+  text-align: left!important;
+}
+
+.input-neighborhood {
+  width:30%
+}
+
+.input-rooms {
+  width:20%
+}
+
+.input-price {
+  width:20%
+}
+
+.alerts-container {
+  width:50%;
+}
+
+@media (max-width:1250px) {
+  .alerts-container {
+    width:90%;
+  }
+}
