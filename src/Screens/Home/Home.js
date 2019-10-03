@@ -104,10 +104,13 @@ const Home = props => {
     console.log('alerts\n', alerts)
     try {
       const res = await apiClient.addAlertstoDb(alerts, email)  
-      alert(res.data)
+      console.log({res})
+      alert(res.data.message)
     } catch(e) {
-      console.log(e)
-      alert(e)
+      console.log({error:e})
+      if (e.response.errors) {
+       // e.response.errors.forEach(error => alert(error)) 
+      }
     }
   }
 
